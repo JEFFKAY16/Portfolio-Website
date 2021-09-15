@@ -12,7 +12,11 @@ a {
   text-decoration: none;
 }
 
-nav {
+ul {
+  list-style: none;
+}
+
+.tool-bar {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -24,7 +28,7 @@ nav {
   color: #28352f;
 }
 
-.nav-menu i {
+nav i {
   margin: 15px 24px;
   cursor: pointer;
 }
@@ -36,7 +40,7 @@ nav {
   background-repeat: no-repeat;
 }
 
-.home-text {
+.home-text h1 {
   text-align: center;
   margin-top: 64px;
   margin-left: 24px;
@@ -47,7 +51,7 @@ nav {
   color: #172b4d;
 }
 
-header span {
+span {
   color: #36b37e;
 }
 
