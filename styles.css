@@ -118,6 +118,14 @@ span {
   text-align: center;
 }
 
+.about-title h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+  margin-bottom: 24px;
+}
+
 .project-cards .card-info h4 {
   font-weight: 600;
   font-size: 24px;
@@ -136,10 +144,11 @@ span {
   font-weight: 600;
   line-height: 16px;
   color: #3a4a42;
-  background:  #ebf0ee;
+  background: #ebf0ee;
   padding: 8px 12px;
   border-radius: 4px;
 }
+
 .project-cards .card-btn {
   text-align: center;
   font-weight: 500;
@@ -152,7 +161,7 @@ span {
 }
 
 .project-cards .card-btn:hover {
-  background: c5e9da;
+  background: #c5e9da;
 }
 
 .project-cards .card-btn a {
@@ -201,7 +210,7 @@ span {
 }
 
 .about-text .about-btn:hover {
-  background: c5e9da;
+  background: #c5e9da;
 }
 
 .about-text .about-btn a {
@@ -220,14 +229,6 @@ span {
   width: 150px;
   height: 120px;
   margin: 40px auto 30px auto;
-}
-
-.about-title h4 {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  color: #344563;
-  margin-bottom: 24px;
 }
 
 .about-mini-cards-1 {
