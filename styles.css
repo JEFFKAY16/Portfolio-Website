@@ -188,6 +188,15 @@ span {
   text-align: center;
 }
 
+footer p {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #42526e;
+}
+
 .about-text p {
   font-weight: 400;
   font-size: 20px;
@@ -297,4 +306,56 @@ span {
   font-size: 12px;
   line-height: 16px;
   color: #36b37e;
+}
+
+.contact-form {
+  width: 100%;
+  margin: 64px 24px 64px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 300px;
+  padding: 10px;
+  margin: 5px;
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.contact-btn {
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  border-radius: 4px;
+  background: #36b37f;
+  width: 200px;
+  margin-left: 30px;
+  outline: none;
+  border: none;
+}
+
+.contact-btn:hover {
+  background: #36b37f;
+}
+
+.contact-btn:active {
+  background: #008552;
 }
