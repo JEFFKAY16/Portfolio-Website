@@ -354,4 +354,6 @@ span {
   padding: 15px 14px;
 }
 
-
+textarea {
+  margin-bottom: 10px;
+}
