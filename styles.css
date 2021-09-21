@@ -315,42 +315,4 @@ span {
   color: #444649;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  position: static;
-  width: 327px;
-  height: 330px;
-  left: 24px;
-  top: 485px;
-  margin-top: 58px;
-}
-
-#name {
-  position: static;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 85.45px;
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 15px 14px;
-}
-
-#email {
-  position: static;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 65.45px;
-  background: #fff;
-  border: 1px solid #d0d9d4;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 15px 14px;
-}
 
