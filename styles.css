@@ -56,7 +56,7 @@ hgroup h1 {
 }
 
 hgroup h1:first-child {
-  color: #172B4D
+  color: #172b4d;
 }
 
 hgroup h1:last-child {
@@ -65,6 +65,13 @@ hgroup h1:last-child {
 
 .home-text {
   text-align: center;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
 }
 
 .home-text p {
@@ -106,7 +113,7 @@ hgroup h1:last-child {
   align-items: center;
 }
 
-.section-title  h2 {
+.section-title h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -221,7 +228,7 @@ hgroup h1:last-child {
   justify-content: center;
 }
 
-.flex-item {
+.flex-item-1 {
   background: #ebf0ee;
   display: flex;
   flex-direction: column;
@@ -230,6 +237,7 @@ hgroup h1:last-child {
   border-radius: 8px;
   border: 1px solid #ebf0ee;
   gap: 10px;
+  padding: 10px;
 }
 
 .about-img {
@@ -255,8 +263,8 @@ hgroup h1:last-child {
 
 .about-technologies {
   display: flex;
-  justify-content: space-between;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 7px;
   margin-bottom: 80px;
@@ -281,6 +289,8 @@ hgroup h1:last-child {
   border-radius: 8px;
   border: 1px solid #ebf0ee;
   margin-top: 10px;
+  gap: 10px;
+  padding: 20px;
 }
 
 .flex-item-3 {
@@ -292,6 +302,8 @@ hgroup h1:last-child {
   border-radius: 8px;
   border: 1px solid #ebf0ee;
   margin-top: 10px;
+  gap: 10px;
+  padding: 10px;
 }
 
 .contact-section {
@@ -359,13 +371,6 @@ footer {
   flex-direction: column;
   align-items: center;
   margin-bottom: 400px;
-}
-
-footer p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
 }
 
 .black-line {
