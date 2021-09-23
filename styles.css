@@ -72,6 +72,13 @@ hgroup h1:last-child {
   text-align: center;
 }
 
+footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
 .home-text p {
   font-weight: 400;
   font-size: 20px;
@@ -189,6 +196,7 @@ hgroup h1:last-child {
   justify-content: center;
   margin-bottom: 24px;
 }
+
 .project-btn button {
   outline: none;
   border: none;
@@ -222,13 +230,6 @@ hgroup h1:last-child {
   margin-top: 24px;
   margin-bottom: 40px;
   text-align: center;
-}
-
-footer p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
 }
 
 .about-text p {
