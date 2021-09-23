@@ -10,18 +10,24 @@
 </head>
 <body>
     <section class="container">
-        <header>
-            <div class="logo">
-                <h1><a href="#">Welcome</a></h1>
-            </div>
-            <nav>
-                <i class="fas fa-bars"></i>
-            </nav>
-        </header>
-        <section class="home-page">
+          <div class="main-background">
+            <header>
+              <div class="logo">
+                  <h1><a href="#">Welcome</a></h1>
+              </div>
+              <nav class="mobile-nav desktop-nav">
+                  <i class="fas fa-bars" id="menu-icon"></i>
+                  <ul class="desk-version">
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>    
+              </nav>
+          </header>
+          <section class="home-page">
             <hgroup>
-                <h1>Hey there. I’m<br>Jeff</h1>
-                <h1>I’m a software<br>developer</h1>
+                <h1>Hey there. I’m Jeff</h1>
+                <h1>I’m a software developer</h1>
             </hgroup>
             <div class="home-text">
                 <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,  don’t hestiate to contact me.</p>
@@ -36,10 +42,11 @@
             <div class="drop-btn">
                 <img src="./IMG/Disabled.png" alt="down-btn">
             </div>
-        </section>
+          </section>
+        </div>
         <section class="work-section">
             <div class="section-title">
-                <h2>My Recent<br> Works</h2>
+                <h2>My Recent Works</h2>
             </div>
             <div class="green-line">
                 <hr>
@@ -144,7 +151,7 @@
                         <li>html</li>
                     </ul>
                     <div class="project-btn">
-                        <button type="button">See Project</button>
+                      <button type="button">See Project</button>
                     </div>
                 </li>
             </ul>
@@ -157,10 +164,10 @@
                 <p> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             </div>
             <div class="project-btn">
-                <button class="about-btn">Get My Resume</button>
+                <button type="button" class="about-btn">Get My Resume</button>
             </div>
             <ul class="flex-container">
-                <li class="flex-item-1">
+                <li class="flex-item">
                     <div class="about-img">
                         <img src="./IMG/icon-languages.svg" alt="project-image">
                     </div>
@@ -181,13 +188,17 @@
                     <div class="about-title">
                         <h4>Framesworks</h4>
                     </div>
-                    <ul class="about-technologies">
+                    <div class="tech-wrap">
+                      <ul class="about-technologies">
                         <li>Bootstrap</li>
                         <li>Ruby on rails</li>
                         <li>RSpec</li>
+                      </ul>
+                      <ul class="about-technologies">
                         <li>Capybara</li>
                         <li>Selenium</li>
-                    </ul>
+                      </ul>
+                    </div>
                 </li>
                 <li class="flex-item-3">
                     <div class="about-img">
@@ -196,13 +207,17 @@
                     <div class="about-title">
                         <h4>Skills</h4>
                     </div>
-                    <ul class="about-technologies">
+                    <div class="tech-wrap">
+                      <ul class="about-technologies">
                         <li>Codekit</li>
                         <li>GitHub</li>
                         <li>Codepen</li>
                         <li>Gitlab</li>
+                      </ul>
+                      <ul class="about-technologies">
                         <li>Terminal</li>
-                    </ul>
+                      </ul>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -223,6 +238,7 @@
                 </form>
            </div>
         </section>
+        <hr class="line-break">
         <footer class="footer">
             <div class="footer-content">
               <ul class="social-icons">
@@ -234,10 +250,10 @@
               </ul>
               <p>jeffkayombo16@gmail.com</p>
             </div>
-          </footer>
-          <div class="black-line">
-              <hr>
-          </div>
+            <div class="black-line">
+                <hr>
+            </div>
+        </footer>
     </section>
 </body>
 </html>
