@@ -384,12 +384,12 @@ textarea {
   border: none;
   color: #fff;
   cursor: pointer;
-  /* transition: 0.7s; */
+  transition: 0.7s;
 }
 
 .contact-btn:hover {
   background: #52d49e;
-  /*transform: scale(1.2);*/
+  transform: scale(1.2);
 }
 
 .contact-btn:active {
