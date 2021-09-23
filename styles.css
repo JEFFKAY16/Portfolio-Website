@@ -61,7 +61,7 @@ hgroup h1 {
 }
 
 hgroup h1:first-child {
-  color: #172B4D
+  color: #172b4d;
 }
 
 hgroup h1:last-child {
@@ -112,7 +112,7 @@ hgroup h1:last-child {
   padding: 10px;
 }
 
-.section-title  h2 {
+.section-title h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -187,9 +187,8 @@ hgroup h1:last-child {
 .project-btn {
   display: flex;
   justify-content: center;
-  margin-bottom: 24px; 
+  margin-bottom: 24px;
 }
-
 .project-btn button {
   outline: none;
   border: none;
@@ -213,7 +212,7 @@ hgroup h1:last-child {
   background-image: url(./IMG/illustration2.svg), url(./IMG/illustration.svg);
   background-position: top -30px right, left bottom 20px;
   background-repeat: no-repeat;
-  background-size: center;
+  background-size: auto;
 }
 
 .about-text {
@@ -223,6 +222,13 @@ hgroup h1:last-child {
   margin-top: 24px;
   margin-bottom: 40px;
   text-align: center;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
 }
 
 .about-text p {
@@ -274,7 +280,6 @@ hgroup h1:last-child {
 .tech-wrap {
   align-items: center;
   flex-direction: column;
-
 }
 
 .about-technologies li {
@@ -288,7 +293,6 @@ hgroup h1:last-child {
 }
 
 .flex-item {
-  height: fixed;
   flex-basis: 30%;
   background: #ebf0ee;
   display: flex;
@@ -300,7 +304,6 @@ hgroup h1:last-child {
 }
 
 .flex-item-2 {
-  height: fixed;
   flex-basis: 30%;
   background: #ebf0ee;
   display: flex;
@@ -313,7 +316,6 @@ hgroup h1:last-child {
 }
 
 .flex-item-3 {
-  height: fixed;
   flex-basis: 30%;
   background: #ebf0ee;
   display: flex;
@@ -390,13 +392,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-footer p {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  color: #42526e;
 }
 
 .black-line {
