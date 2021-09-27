@@ -2,6 +2,9 @@
 
 A personal portfolio website is the easiest way of showing what you’re truly capable of as a developer, and is a quick and simple way for recruiters and hiring managers to get an idea of what you can bring to their teams.
 
+## Live Demo
+- [`Click here to see it live`](https://jeffkay16.github.io/Portfolio-Website/)
+
 ## Built With
 - HTML/CSS
 
