@@ -96,7 +96,8 @@ footer p {
 }
 
 .social-icons i {
-  color: #505f79;
+  color: #42526e;
+  font-size: 21px;
 }
 
 .drop-btn {
@@ -447,7 +448,7 @@ footer {
   }
 
   .social-icons {
-    gap: 40px;
+    gap: 21px;
   }
 
   .grid-container {
@@ -504,9 +505,8 @@ footer {
   }
 
   .social-icons {
-    gap: 60px;
+    gap: 22px;
   }
-
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
