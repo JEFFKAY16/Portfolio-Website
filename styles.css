@@ -507,6 +507,7 @@ footer {
   .social-icons {
     gap: 22px;
   }
+  
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
