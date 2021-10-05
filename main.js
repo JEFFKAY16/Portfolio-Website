@@ -12,7 +12,7 @@ close_btn.addEventListener('click', function() {
 })
 
 list_items.forEach(element => {
-  element.addEventListener('click', function() {
-  cover.classList.remove('d-flex');
-})
+    element.addEventListener('click', function() {
+    cover.classList.remove('d-flex');
+  })
 });
