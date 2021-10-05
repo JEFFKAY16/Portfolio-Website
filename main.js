@@ -11,8 +11,8 @@ closeButton.addEventListener('click', () => {
   cover.classList.remove('d-flex');
 });
 
-listItems.forEach(element => {
-    element.addEventListener('click', () => {
+listItems.forEach((element) => {
+  element.addEventListener('click', () => {
     cover.classList.remove('d-flex');
   });
 });
