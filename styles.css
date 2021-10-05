@@ -7,6 +7,10 @@
   font-family: 'Inter', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
   list-style: none;
 }
@@ -419,6 +423,25 @@ footer {
   display: none;
 }
 
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.d-flex li {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     margin: 24px;
@@ -501,6 +524,10 @@ footer {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .desk-version .close-icon {
+    display: none;
   }
 
   .social-icons {
