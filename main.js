@@ -10,3 +10,9 @@ menu_btn.addEventListener('click', function() {
 close_btn.addEventListener('click', function() {
   cover.classList.remove('d-flex');
 })
+
+list_items.forEach(element => {
+  element.addEventListener('click', function() {
+  cover.classList.remove('d-flex');
+})
+});
