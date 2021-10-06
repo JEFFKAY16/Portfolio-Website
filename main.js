@@ -27,7 +27,7 @@ const projectCards = [
     button: 'See Project',
     links: ['https://jeffkay16.github.io/Portfolio-Website/', 'https://github.com/JEFFKAY16/Portfolio-Website.git'],
   },
-];  
+];
 const [project] = projectCards;
 const popupSection = document.querySelector('.popup-section');
 popupSection.innerHTML = ` 
@@ -54,7 +54,7 @@ popupSection.innerHTML = `
         <a href="${project.links[1]}" class="popup-btn font-f see-source">See Source <span><i class="fa fa-github"></i></span></a>
       </div>
     </div>
-  </div>`; 
+</div>`;
 const popupClose = document.querySelector('.popup-close-btn');
 popButton.forEach((element) => {
   element.addEventListener('click', () => {
