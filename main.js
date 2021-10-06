@@ -29,9 +29,35 @@ let projectCards = [
     links: ['https://jeffkay16.github.io/Portfolio-Website/', 'https://github.com/JEFFKAY16/Portfolio-Website.git']
   },
 ];
-  ///////////
-
-  //////////
+  
+  const [project] = projectCards;
+  const popupSection = document.querySelector('.popup-section');
+  popupSection.innerHTML =` 
+  <div class="popup-card">
+    <i class="fa fa-times popup-close-btn" aria-hidden="true"></i>
+    <div class="popup-img">
+      <img class="img-block" src="${project.image}" alt="#">
+    </div>
+    <div class="bottom-card-popup">
+      <h4 class="popup-title">${project.title}</h4>
+      <ul class="popup-tech" id="foo">
+        <li class="mobile-only">${project.technologies[0]}</li>
+        <li class="mobile-only">${project.technologies[1]}</li>
+        <li class="mobile-only">${project.technologies[2]}</li>
+        <li class="desktop-only">${project.technologies[3]}</li>
+        <li class="desktop-only">${project.technologies[4]}</li>
+        <li class="desktop-only">${project.technologies[5]}</li>
+        <li class="desktop-only">${project.technologies[6]}</li>
+        <li class="desktop-only">${project.technologies[7]}</li>
+      </ul>
+      <p class="popup-text">${project.description}</p>
+      <div class="popup-btns">
+        <a href="${project.links[0]}" class="popup-btn font-f see-live">See Live <span><i class="fa fa-external-link"></i></span></a>
+        <a href="${project.links[1]}" class="popup-btn font-f see-source">See Source <span><i class="fa fa-github"></i></span></a>
+      </div>
+    </div>
+  </div>`;
+  
 
   const popupClose = document.querySelector('.popup-close-btn');
 
