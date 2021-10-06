@@ -25,11 +25,10 @@ const projectCards = [
     technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'Bootstrap', 'CodePen', 'Terminal', 'CodeKit', 'GitHub'],
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dumm. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dumm',
     button: 'See Project',
-    links: ['https://jeffkay16.github.io/Portfolio-Website/', 'https://github.com/JEFFKAY16/Portfolio-Website.git']
-}
-];
-  
-  const[project] = projectCards;
+    links: ['https://jeffkay16.github.io/Portfolio-Website/', 'https://github.com/JEFFKAY16/Portfolio-Website.git'],
+  },
+];  
+const [project] = projectCards;
 const popupSection = document.querySelector('.popup-section');
 popupSection.innerHTML = ` 
 <div class="popup-card">
@@ -55,8 +54,7 @@ popupSection.innerHTML = `
         <a href="${project.links[1]}" class="popup-btn font-f see-source">See Source <span><i class="fa fa-github"></i></span></a>
       </div>
     </div>
-  </div>`;
-  
+  </div>`; 
 const popupClose = document.querySelector('.popup-close-btn');
 popButton.forEach((element) => {
   element.addEventListener('click', () => {
