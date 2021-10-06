@@ -443,6 +443,111 @@ footer {
   color: #3a4a42;
 }
 
+.popup-section  {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(182, 177, 177, 0.801);
+  width: 100%;
+}
+
+.popup-card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.popup-img img {
+  width: 100%;
+}
+
+.bottom-card-popup {
+  width: 100%;
+}
+
+.popup-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.popup-tech{
+  margin: 5px 11px 20px 11px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+}
+
+.popup-tech li {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  background: #ebf0ee;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.popup-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #344563;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.popup-btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+  width: 100%;
+}
+
+.popup-btn {
+  padding: 7px 12px;
+  color: #fff;
+  background-color: #36b37f;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.popup-btn:hover {
+  background: #52d49e;
+}
+
+.popup-btn:active {
+  background: #008552;
+}
+
+.popup-close-btn {
+  right: 50px;
+  top: 50px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.d-none {
+  display: none;
+}
+
+.desktop-only {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     margin: 24px;
@@ -607,4 +712,49 @@ footer {
     text-align: center;
     border-radius: 2px;
   }
+
+  .popup-card {
+    width: 70%;
+    margin: 10px auto;
+    padding: 8px;
+  }
+
+  .popup-img {
+    width: 100%;
+  }
+
+  .popup-img img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .bottom-card-popup {
+    width: 100%;
+    margin-top: -170px;
+  }
+
+  .popup-btns {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+  }
+
+  .popup-close-btn {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+  }
+
+  .d-none {
+    display: none
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
 }
