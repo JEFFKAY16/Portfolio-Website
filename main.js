@@ -63,7 +63,7 @@ const pop = () => {
 const popupClose = document.querySelector('.popup-close-btn');
 popButton.forEach((element) => {
   element.addEventListener('click', () => {
-    pop()
+    pop();
   });
 });
 
