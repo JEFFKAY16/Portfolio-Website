@@ -65,3 +65,88 @@ popButton.forEach((element) => {
 popupClose.addEventListener('click', () => {
   popupSection.classList.add('d-none');
 });
+
+const projectCard = [
+  {
+    id: 'card1',
+    image: './IMG/placeholder.png',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    button: 'See Project',
+    links: ['https://www.google.com', 'https://github.com/'],
+  },
+  {
+    id: 'card2',
+    image: './IMG/placeholder.png',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    button: 'See Project',
+    links: ['https://www.google.com', 'https://github.com/'],
+  },
+  {
+    id: 'card3',
+    image: './IMG/placeholder.png',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    button: 'See Project',
+    links: ['https://www.google.com', 'https://github.com/'],
+  },
+  {
+    id: 'card4',
+    image: './IMG/placeholder.png',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    button: 'See Project',
+    links: ['www.google.com', 'www.facebook.com'],
+  },
+  {
+    id: 'card5',
+    image: './IMG/placeholder.png',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    button: 'See Project',
+    links: ['https://www.google.com', 'https://github.com/'],
+  },
+  {
+    id: 'card6',
+    image: './IMG/placeholder.png',
+    name: 'Multi-Post Stories Gain+Glory',
+    technologies: ['Ruby on rails', 'CSS', 'JavaScript', 'html'],
+    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    button: 'See Project',
+    links: ['https://www.google.com', 'https://github.com/'],
+  },
+];
+
+projectCard.forEach((el) => {
+  const template = document.createElement('template');
+  template.innerHTML = `
+  <li class="grid-items">
+                  <div class="project-img">
+                      <img src="${el.image}" alt="project-image">
+                  </div>
+                  <div class="project-title">
+                      <h4>${el.name}</h4>
+                  </div>
+                  <ul class="project-technologies">
+                      <li>Ruby on rails</li>
+                      <li>css</li>
+                      <li>JavaScript</li>
+                      <li>html</li>
+                  </ul>
+                  <div class="project-btn">
+                    <button class="pop-buttons" type="button" onclick="pop()">${el.button}</button>
+                  </div>
+                </li>
+  `
+  document.querySelector('.grid-container').appendChild(template.content)
+})
+
+const pop = () => {
+  popupSection.classList.remove('d-none');
+}
