@@ -133,16 +133,19 @@
                 <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
             </div>
            <div class="contact-form">
-                <form action="https://formspree.io/f/xeqvnpjn" method="POST" class="form">
-                    <input type="text" maxlength="30" name="name" required id="name" placeholder="Full Name">
-                    <br>
-                    <input type="email" name="email" required placeholder="Enter E-mail" id="email">
-                    <br>
-                    <textarea name="msg" id="message" cols="30" rows="10" placeholder="Please leave a message" required maxlength="500"></textarea>
-                    <div class="submit-btn">
-                        <button type="submit" class="contact-btn">Get In Touch</button>
-                    </div>
-                </form>
+              <form action="https://formspree.io/f/xeqvnpjn" method="POST" class="form" name="contact-form">
+                <input class="name" type="text" maxlength="30" name="fullName" id="name" placeholder="Full Name" required>
+                <br>
+                <input class="email" type="email" name="email" placeholder="Enter E-mail" id="email" required>
+                <br>
+                <textarea name="msg" id="message" cols="30" rows="10" placeholder="Please leave a message" maxlength="500" required></textarea>
+                <div class="submit-btn">
+                    <button type="submit" class="contact-btn">Get In Touch</button>
+                </div>
+                <div class="error-place">
+                  <small class="error-message">Email must be in lower case</small>
+                </div>
+              </form>
            </div>
         </section>
         <hr class="line-break">
