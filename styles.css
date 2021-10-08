@@ -208,7 +208,7 @@ footer p {
 }
 
 .project-btn button,
-.popup-btn{
+.popup-btn {
   outline: none;
   border: none;
   padding: 12px;
@@ -466,9 +466,7 @@ footer {
   border-radius: 16px;
   margin: 20px auto;
   padding: 10px;
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 .popup-img img {
@@ -714,9 +712,7 @@ footer {
     position: relative;
     width: 70%;
     margin: 10px auto;
-    height: -moz-fit-content;
-    height: -webkit-fit-content;
-    height: fit-content;
+    height: auto;
     overflow-y: auto;
     padding: 24px;
   }
@@ -732,7 +728,8 @@ footer {
 
   .bottom-card-popup {
     width: 100%;
-    margin-top: -170px;
+    position: relative;
+    margin-top: 0;
   }
 
   .popup-btns {
@@ -750,16 +747,11 @@ footer {
     right: 0;
     font-size: 18px;
     padding: 14px 18px;
-    background: #EBECF0;
+    background: #ebecf0;
     border-radius: 8px;
     text-shadow: none;
-    color: #67798E;
+    color: #67798e;
     margin-bottom: 24px;
-  }
-
-  .bottom-card-popup {
-    position: relative;
-    margin-top: 0;
   }
 
   .bottom-card-popup * {
@@ -788,9 +780,9 @@ footer {
     width: fit-content;
   }
 
-  .desktop-popup-links  .popup-btns a {
+  .desktop-popup-links .popup-btns a {
     white-space: nowrap;
-    max-height: 50px;;
+    max-height: 50px;
   }
 
   .d-none {
