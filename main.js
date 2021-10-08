@@ -143,6 +143,13 @@ popupSection.innerHTML = `
     </div>
 </div>`;
 
+const popupClose = document.querySelector('.popup-close-btn');
+popButton.forEach((element) => {
+  element.addEventListener('click', () => {
+    pop();
+  });
+});
+
 const pop = () => {
   popupSection.classList.remove('d-none');
   popupClose.addEventListener('click', () => {
@@ -150,9 +157,3 @@ const pop = () => {
   });
 };
 
-const popupClose = document.querySelector('.popup-close-btn');
-popButton.forEach((element) => {
-  element.addEventListener('click', () => {
-    pop();
-  });
-});
