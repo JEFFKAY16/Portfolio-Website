@@ -55,10 +55,15 @@ popupSection.innerHTML = `
       </div>
     </div>
 </div>`;
+
+const pop = () => {
+  popupSection.classList.remove('d-none');
+};
+
 const popupClose = document.querySelector('.popup-close-btn');
 popButton.forEach((element) => {
   element.addEventListener('click', () => {
-    popupSection.classList.remove('d-none');
+    pop()
   });
 });
 
@@ -143,10 +148,6 @@ projectCard.forEach((el) => {
                     <button class="pop-buttons" type="button" onclick="pop()">${el.button}</button>
                   </div>
                 </li>
-  `
-  document.querySelector('.grid-container').appendChild(template.content)
-})
-
-const pop = () => {
-  popupSection.classList.remove('d-none');
-}
+  `;
+  document.querySelector('.grid-container').appendChild(template.content);
+});
