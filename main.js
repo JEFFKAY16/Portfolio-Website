@@ -163,14 +163,4 @@ const messageInput = form.msg;
 const nameInput = form.fullName;
 const formElts = form.querySelectorAll('input, textarea');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const email = mail.value;
-  let messages = [];
-  if (!isLowerCase(email)) {
-    errorMessage.style.display = 'block';
-  } else {
-    errorMessage.style.display = 'none';
-    form.submit();
-  }
-});
+// Kindly Paste the code down here and remove this comment afterwards.
