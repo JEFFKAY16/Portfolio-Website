@@ -159,14 +159,10 @@ const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 const errorMessage = document.querySelector('.error-message');
 const form = document.forms['contact-form'];
 const mail = form.email;
-const messageInput = form.msg;
-const nameInput = form.fullName;
-const formElts = form.querySelectorAll('input, textarea');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const email = mail.value;
-  let messages = [];
   if (!isLowerCase(email)) {
     errorMessage.style.display = 'block';
   } else {
