@@ -543,6 +543,22 @@ footer {
   display: none;
 }
 
+.error-place {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-message {
+  color: rgb(245, 59, 59);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px;
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     margin: 24px;
@@ -594,6 +610,15 @@ footer {
   .contact-btn {
     padding: 15px;
     width: 300px;
+  }
+
+  .error-place {
+    text-align: center;
+    width: 100%;
+  }
+
+  .error-message {
+    margin-left: 30px;
   }
 }
 

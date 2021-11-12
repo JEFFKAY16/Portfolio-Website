@@ -154,3 +154,19 @@ popButton.forEach((element) => {
     pop();
   });
 });
+
+const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const errorMessage = document.querySelector('.error-message');
+const form = document.forms['contact-form'];
+const mail = form.email;
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = mail.value;
+  if (!isLowerCase(email)) {
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+    form.submit();
+  }
+});
